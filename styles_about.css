@@ -10,11 +10,13 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    color: white;
+
 
 }
 
-h1 {
+
+
+h1, h2, p {
     color: white;
 }
 
@@ -23,10 +25,4 @@ img {
     margin: 0 auto;
 }
 
-h2 {
-    color: white;
-}
 
-p{
-    color: white;
-}
