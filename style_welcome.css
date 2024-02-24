@@ -1,0 +1,89 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Global */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: 'Roboto', monospace;  
+  background-color: black;
+  padding: 2em; /* Alterado o valor para ser responsivo */
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Garante que o conteúdo não seja revelado até a animação */
+  border-right: .15em solid black; /* O cursor do typewriter */
+  white-space: nowrap; /* Mantém o conteúdo em uma única linha */
+  margin: 0 auto; /* Dá aquele efeito de rolagem conforme a digitação acontece */
+  letter-spacing: .15em; /* Ajuste conforme necessário */
+  animation: 
+    typing 3.5s steps(25, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: calc(100% + .15em); } /* Ajustado para a largura da palavra */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .icon-button img {
+    width: 50px;
+    height: 50px;
+  }
